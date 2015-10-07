@@ -7,13 +7,8 @@ li {
   list-style-type: none;
 }
 img {
-  width: 250px;
+  width: 300px;
 }
-/*
-ul {
-  display: inline-block;
-  width: 100%;
-}*/
 
 a {
   text-decoration: none;
@@ -30,18 +25,30 @@ a:link {
 
 ul li {
   display: inline-block;
-  margin: 5px;
-  align-items: stretch;
+  margin: 8px;
+}
+ul.authors {
+  margin: 0;
+
+}
+
+.authors li {
+  margin: 0;
+}
+
+.authors {
+  margin-left: 5px;
 }
 
 .octodex {
   width: 10%;
   display: flex;
 }
-
-/*.octocat {
-  display: inline-block;
-}*/
+.octocat {
+  border-bottom-style: solid;
+  border-color: gray;
+  border-width: thin;
+}
 
 .octodex img {
   border-style: solid;
@@ -50,63 +57,62 @@ ul li {
   border-radius: 3px;
 }
 
+.image-footer img {
+  border-style: none;
+  border-radius: 0px;
+}
 .image-footer {
   width: 100%;
-  border-bottom-style: solid;
-  border-color: gray;
-  border-width: thin;
-  display: flex;
   height: 30px;
-  float: right;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 13px;
 }
 .image-footer ul {
-  margin: 0;
+
   padding: 0;
-  float: right;
 }
 
-.image-footer img{
-  width: 20px;
-  float: right;
-}
 .arrow-down {
 	width: 0;
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 8px solid gray;
+	border-top: 8px solid lightgray;
   margin: auto;
   float: right;
   position: relative;
-  right: 8px;
-  top: -5px;
+  right: 4px;
+  top: -4px;
 }
 
 .image-caption{
-  display: inline-block;
+  display: flex;
   width: 100%;
-}
-.image-caption span, a {
-  display: inline-block;
+  margin: 5px;
 }
 
+.image-caption a, span {
+  margin: 2px;
+}
 
-/*.image-caption {
-  display: inline-block;
-  float: right;
-  position: relative;
-  right: 50px;
-  margin: 0;
-}*/
-/*
-.authors {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  left: 128px;
-  top: -20px;
-}*/
+.image-caption span {
+  font-weight: bold;
+  color: gray;
+}
 
 .image-number{
   color: gray;
+  position:static;
+  font-weight: bold;
+}
+.image-footer img{
+  width: 20px;
+}
+.image-caption {
+  margin: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: row;
 }
