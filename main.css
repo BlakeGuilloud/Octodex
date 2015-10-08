@@ -27,9 +27,9 @@ ul li {
   display: inline-block;
   margin: 8px;
 }
-ul.authors {
-  margin: 0;
 
+.authors {
+  margin: 0;
 }
 
 .authors li {
@@ -44,15 +44,11 @@ ul.authors {
   width: 10%;
   display: flex;
 }
-.octocat {
-  border-bottom-style: solid;
-  border-color: gray;
-  border-width: thin;
-}
+
 
 .octodex img {
   border-style: solid;
-  border-width: thin;
+  border-width: 1px;
   border-color: gray;
   border-radius: 3px;
 }
@@ -61,16 +57,20 @@ ul.authors {
   border-style: none;
   border-radius: 0px;
 }
+
 .image-footer {
   width: 100%;
-  height: 30px;
+  height: 25px;
   display: flex;
   align-items: center;
   margin: 0;
   font-size: 13px;
+  border-bottom-style: solid;
+  border-color: gray;
+  border-width: 1px;
 }
-.image-footer ul {
 
+.image-footer ul {
   padding: 0;
 }
 
@@ -102,17 +102,19 @@ ul.authors {
   color: gray;
 }
 
-.image-number{
-  color: gray;
-  position:static;
-  font-weight: bold;
-}
-.image-footer img{
-  width: 20px;
-}
 .image-caption {
   margin: 0;
   display: inline-flex;
   justify-content: flex-end;
   flex-direction: row;
+}
+
+.image-number{
+  color: gray;
+  position:static;
+  font-weight: bold;
+}
+
+.image-footer img{
+  width: 20px;
 }
